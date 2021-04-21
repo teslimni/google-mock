@@ -19,7 +19,7 @@
             </ul>
         </nav>
     </header>
-    <main class="flex flex-col justify-center h-3/6">
+    <main class="flex flex-col h-5/6 min-h-full overflo-y-hidden">
         <div class="flex flex-col items-center justify-end h-28 mt-52">
             <img class="google-logo h-10 w-10" src="img/google-logo.png" alt="Google-logo">
         </div>
@@ -33,8 +33,8 @@
                 <input type-"text" value="I'm Feelig Lucky" class="inline-block border my-5 p-2 bg-gray-50 hover:shadow text-gray-700 text-center rounded">
             </div>
         </div><!-- .container ends-->
-        <div class="h-screen">
-            <div class="flex justify-center h-90">
+        <div class="flex-grow max-h-80">
+            <div class="flex justify-center">
                 <p class="flex space-x-2 text-xs">Google offered in: 
                     <span class="ml-1"><a class="hover:underline" href="#">Hausa</a></span>
                     <span><a class="hover:underline" href="#">Igbo</a></span>
@@ -43,21 +43,26 @@
                 </p>
             </div>
         </div>
-        <div class="justify-end">
-            <div><p>Nigeria</p></div>
-            <div class="left-links">
-                <a href="#">About</a>
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">How Search Works</a>
+        <div class="flex-shrink bg-gray-100 px-5 text-gray-500">
+            <div class="py-3">
+                <p>Nigeria</p>
             </div>
-            <div class="center-link">
-                <a href="#">Carbon Neutral Since 2007</a>
-            </div>
-            <div class="last-link">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Settings</a>
+            <hr>
+            <div class="flex justify-between py-5">
+                <ul class="left-links flex justify-between w-3/12">
+                    <li><a class="inline-block" href="#">About</a></li>
+                    <li><a class="inline-block" href="#">Advertising</a></li>
+                    <li><a class="inline-block" href="#">Business</a></li>
+                    <li><a class="inline-block" href="#">How Search Works</a></li>
+                </ul>
+                <div class="center-link w-6/12 text-center">
+                    <a href="#">Carbon neutral since 2007</a>
+                </div>
+                <div class="last-link flex justify-between w-2/12 text-right">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Settings</a>
+                </div>
             </div>
         
         </div>
