@@ -9,17 +9,58 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="h-screen">
-    <header>Menu</header>
-    <main class="flex flex-col items-center justify-center h-5/6">
-        <div>
-            <img class="google-logo" src="img/google-logo.png" alt="Google-logo">
+    <header class="flex justify-end">
+        <nav class="mx-5 my-5 text-sm font-sans">
+            <ul class="flex justify-between items-center space-x-8">
+                <li>Gmail</li>
+                <li>Images</li>
+                <li>Gmail</li>
+                <li><img class="h-8 w-8 rounded-full" src="img/nuru.jpg" alt=""></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex flex-col justify-center h-3/6">
+        <div class="flex flex-col items-center justify-end h-28 mt-52">
+            <img class="google-logo h-10 w-10" src="img/google-logo.png" alt="Google-logo">
         </div>
-        <div class="flex justify-center container w-8/12 mx-auto mt-5">
-            <label class="sr-only" for="s">Search</label>
-            <input type="search" name="s" id="s" class="py-3 px-6 border rounded-full w-5/6 mx-auto shadow">
+        <div class="container w-6/12 mx-auto mt-5">
+            <form class="flex justify-center w-full mb-2">
+                <label class="sr-only" for="s">Search</label>
+                <input type="search" name="s" id="s" class="py-3 px-6 border rounded-full w-full md:w-5/6 md:mx-auto hover:shadow focus:ring outline-none">
+            </form>
+            <div class="flex justify-center space-x-5 w-full mx-auto">
+                <input type-"text" value="Google Search" class="inline-block border my-5 p-2 bg-gray-50 hover:shadow text-gray-700 text-center rounded">
+                <input type-"text" value="I'm Feelig Lucky" class="inline-block border my-5 p-2 bg-gray-50 hover:shadow text-gray-700 text-center rounded">
+            </div>
+        </div><!-- .container ends-->
+        <div class="h-screen">
+            <div class="flex justify-center h-90">
+                <p class="flex space-x-2 text-xs">Google offered in: 
+                    <span class="ml-1"><a class="hover:underline" href="#">Hausa</a></span>
+                    <span><a class="hover:underline" href="#">Igbo</a></span>
+                    <span><a class="hover:underline" href="#">Èdè Yorùbá</a></span>
+                    <span><a class="hover:underline" href="#">Nigerian Pidgin</a><span>
+                </p>
+            </div>
         </div>
-        <div></div>
-        <div></div>
+        <div class="justify-end">
+            <div><p>Nigeria</p></div>
+            <div class="left-links">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
+            </div>
+            <div class="center-link">
+                <a href="#">Carbon Neutral Since 2007</a>
+            </div>
+            <div class="last-link">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        
+        </div>
     </main>
     
 </body>
