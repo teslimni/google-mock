@@ -13,3 +13,31 @@
 .expanded {
   margin-left: -1.5px;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Closes the accordion */
+.accordion__content {
+  display: none;
+}
+.caret-down {
+  display: block;
+}
+
+.caret-up {
+  display: none;
+}
+
+.accordion.is-open .caret-up {
+  display: block;
+}
+
+.accordion.is-open .caret-down {
+  display: none;
+}
+
+/* Opens the accordion */
+.accordion.is-open .accordion__content {
+  display: block;
+}
