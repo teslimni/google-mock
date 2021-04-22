@@ -2,3 +2,14 @@
   width: 272px;
   height: 92px;
 }
+
+.search-box {
+}
+
+.hide {
+  display: none;
+}
+
+.expanded {
+  margin-left: -1.5px;
+}
