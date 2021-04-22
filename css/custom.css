@@ -41,3 +41,7 @@
 .accordion.is-open .accordion__content {
   display: block;
 }
+
+.scrolled {
+  box-shadow: 2px 0 4px rgb(0 0 0 / 16%);
+}

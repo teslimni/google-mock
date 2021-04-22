@@ -5,6 +5,8 @@ const inputFull = document.querySelector('.hide');
 const expand = document.querySelector('.droplist');
 const offers = document.querySelector('.search-tabs');
 const langs = document.querySelector('.search-langs');
+const footerOffer = document.querySelector('.scroller');
+const gOffer = document.querySelector('.g-Offer')
 
 // search.addEventListener('click', e => {
 //     form.classList.add('open');
@@ -29,4 +31,8 @@ accordions.forEach(accordion => {
       // Toggle the is-open class
       accordion.classList.toggle('is-open')
     })
-  })
+})
+
+footerOffer.addEventListener('scroll', e => {
+    gOffer.classList.toggle('scrolled')
+})
