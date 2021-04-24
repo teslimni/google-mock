@@ -3,11 +3,15 @@
   height: 92px;
 }
 
-.search-box {
-}
+/* .search-box {
+} */
 
 .hide {
   display: none;
+}
+
+.open {
+  display: block;
 }
 
 .expanded {

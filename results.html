@@ -9,6 +9,134 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="bg-gray-200 lg:bg-white">
+    <div class="lg:hidden bg-white">
+        <form class="formMobile flex flex-col relative">
+            <!-- mobile-droplist here -->
+            <div class="mobile-droplist hide flex flex-col py-2 px-2 h-screen w-full shadow-lg absolute top-0 z-10 bg-white">
+                <div class="flex justify-between">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute top-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute top-5 left-72 md:left-full text-gray-500 close" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                </div>
+                <input type="search" name="mobileDrop" id="mobileDrop" class="mobile-drop py-2 px-10 border-b border-gray-300 w-full md:w-5/6 md:mx-auto outline-none border-t-0 border-r-0 border-l-0" autocomplete="off" placeholder="mobileDrop">
+                <ul class="flex flex-col mt-5 space-y-5">
+                    <li class="flex items-center justify-between space-x-2">
+                        <div class="flex items-center justify-between space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                              </svg>
+                            <a href="#" class="text-gray-600">How to become a superb</a>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform rotate-45 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </li>
+                    <li class="flex items-center justify-between space-x-2">
+                        <div class="flex items-center justify-between space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                              </svg>
+                            <a href="#" class="text-gray-600">How to become a superb</a>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform rotate-45 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </li>
+                    <li class="flex items-center justify-between space-x-2">
+                        <div class="flex items-center justify-between space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                              </svg>
+                            <a href="#" class="text-gray-600">How to become a superb</a>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform rotate-45 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </li>
+                    <li class="flex items-center justify-between space-x-2">
+                        <div class="flex items-center justify-between space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                              </svg>
+                            <a href="#" class="text-gray-600">How to become a superb</a>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform rotate-45 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </li>
+                    <li class="flex items-center justify-between space-x-2">
+                        <div class="flex items-center justify-between space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                              </svg>
+                            <a href="#" class="text-gray-600">How to become a superb</a>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform rotate-45 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </li>
+                    <li class="flex items-center justify-between space-x-2">
+                        <div class="flex items-center justify-between space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                              </svg>
+                            <a href="#" class="text-gray-600">How to become a superb</a>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform rotate-45 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </li>
+                    <li class="flex items-center justify-between space-x-2">
+                        <div class="flex items-center justify-between space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                              </svg>
+                            <a href="#" class="text-gray-600">How to become a superb</a>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform rotate-45 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </li>
+                    <li class="flex items-center justify-between space-x-2">
+                        <div class="flex items-center justify-between space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                              </svg>
+                            <a href="#" class="text-gray-600">How to become a superb</a>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform rotate-45 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </li>
+                    <li class="flex items-center justify-between space-x-2">
+                        <div class="flex items-center justify-between space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                              </svg>
+                            <a href="#" class="text-gray-600">How to become a superb</a>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform rotate-45 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </li>
+                    <li class="flex items-center justify-between space-x-2">
+                        <div class="flex items-center justify-between space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                              </svg>
+                            <a href="#" class="text-gray-600">How to become a superb</a>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform rotate-45 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </li>
+                </ul>
+                </div>
+        </form>
+    </div>
     <header class="py-5 bg-white px-5">
         <div class="flex items-center justify-between lg:justify-start lg:space-x-5">
             <!-- The Hamburger Menu -->
@@ -21,8 +149,8 @@
             <div class="lg:-ml-5">
                 <img class="logo h-16 w-32 px-5 lg:px-0 lg:w-20 -ml-3" src="img/google-logo.png" alt="Google-logo">
             </div>
-            <!-- Search bar -->
-            <form class="formOne flex flex-col justify-center w-8/12 lg:w-6/12 mx-auto mb-2 relative open hidden lg:block -ml-10">
+            <!-- Big Screen Search bar -->
+            <form class="desktop flex flex-col justify-center w-8/12 lg:w-6/12 mx-auto mb-2 relative hidden lg:block -ml-10">
                 <label class="sr-only" for="s">Search</label>
                 <div class="absolute top-3 left-2 pl-3 flex justify-between items-center pointer-events-none w-9/12">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#9AA0A5">
@@ -32,9 +160,9 @@
                         <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd" />
                       </svg>
                   </div>
-                <input type="search" name="s" id="s" class="mobile-search py-2 px-10 border rounded-3xl w-full md:w-5/6 md:mx-auto shadow hover:shadow-md outline-none" autocomplete="off">
+                <input type="search" name="s" id="s" class="big-search-box py-2 px-10 border rounded-3xl w-full md:w-5/6 md:mx-auto shadow hover:shadow-md outline-none" autocomplete="off" placeholder="desktop">
 
-                <div class="mobile-droplist hide flex flex-col justify-between py-2 px-6 border border-t-transparent rounded-t-none rounded-t-none rounded-b-2xl h-auto w-full md:w-5/6 md:mx-auto shadow-lg outline-none border-t-0 -mt-2 absolute top-10 left-16 z-10 -ml-2">
+                <div class="desktop-droplist hide flex flex-col justify-between py-2 px-6 border border-t-transparent rounded-t-none rounded-t-none rounded-b-2xl h-auto w-full md:w-5/6 md:mx-auto shadow-lg outline-none border-t-0 -mt-2 absolute top-10 left-16 z-10 -ml-2">
                     <ul class="flex flex-col mt-5 space-y-2">
                         <li class="flex items-center justify-between space-x-2">
                             <div class="flex items-center justify-between space-x-2">
@@ -134,8 +262,9 @@
                 <img class="avatar h-8 w-8 rounded-full lg:ml-auto" src="img/nuru.jpg" alt="Nuru">
             </div>
         </div>
+        <!-- Mobile Search form -->
         <div class="mt-5 lg:hidden">
-            <form class="formOne flex flex-col justify-center w-11/12 mx-auto mb-2 relative open">
+            <form class="formMobile flex flex-col justify-center w-11/12 mx-auto mb-2 relative">
                 <label class="sr-only" for="s">Search</label>
                 <div class="absolute top-3 left-6 pl-0 md:pl-12 flex justify-between items-center pointer-events-none w-9/12 md:w-10/12">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#9AA0A5">
@@ -145,9 +274,11 @@
                         <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd" />
                       </svg>
                   </div>
-                <input type="search" name="s" id="s" class="mobile-search py-2 px-10 border rounded-3xl w-full md:w-5/6 md:mx-auto shadow outline-none" autocomplete="off">
+                <input type="search" name="mobileSearch" id="mobileSearch" class="mobile-search py-2 px-10 border rounded-3xl w-full md:w-5/6 md:mx-auto shadow outline-none" autocomplete="off" placeholder="mobile">
 
-                <div class="mobile-droplist hide flex flex-col justify-between py-2 px-6 border border-t-transparent rounded-t-none rounded-t-none rounded-b-2xl h-auto w-full md:w-5/6 md:mx-auto shadow-lg outline-none border-t-0 -mt-2 absolute top-10 left-16 z-10 -ml-2">
+                <!-- mobile-droplist here -->
+                <div class="mobile-droplist hide flex flex-col justify-between py-2 px-6 border border-t-transparent rounded-t-none rounded-t-none rounded-b-2xl h-auto w-full md:w-5/6 md:mx-auto shadow-lg outline-none border-t-0 -mt-2 absolute -top-24 z-10">
+                    <input type="search" name="sf" id="sf" class="mobile-search py-2 px-10 border rounded-3xl w-full md:w-5/6 md:mx-auto shadow outline-none" autocomplete="off" placeholder="mobileDrop">
                     <ul class="flex flex-col mt-5 space-y-2">
                         <li class="flex items-center justify-between space-x-2">
                             <div class="flex items-center justify-between space-x-2">
@@ -246,7 +377,7 @@
         <!-- Mobile nav -->
         <div class="xl:hidden">
             <nav>
-                <ul class="flex justify-between items-center text-sm overflow-x-auto font-extrabold text-gray-500">
+                <ul class="flex justify-between items-center text-sm overflow-x-auto font-extrabold text-gray-400">
                     <li class="mx-3 hover:border-b-2 w-max border-b-2 text-black border-black">All</li>
                     <li class="mx-3 w-max">Images</li>
                     <li class="mx-3 w-max">Videos</li>
@@ -259,9 +390,9 @@
         </div>
         <!-- Large screen nav -->
         <div class="hidden xl:block mt-5 pb-2 border-b">
-            <div class="flex justify-between container w-5/12 ml-32">
+            <div class="flex justify-between container w-5/12 ml-32 text-gray-500">
                 <ul class="flex space-x-5">
-                    <li class="">All</li>
+                    <li class="text-black">All</li>
                     <li>Video</li>
                     <li>Images</li>
                     <li>News</li>
