@@ -9,46 +9,57 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="flex flex-col justify-between min-h-screen">
-    <header class="flex justify-end">
-        <nav class="mx-5 my-3 text-sm font-sans">
-            <ul class="flex justify-between items-center space-x-8">
-                <li>Gmail</li>
-                <li>Images</li>
-                <li>
-                    <a href="#" class="flex">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 -ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 -ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 -ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                      </svg>
-                    </a>
-                </li>
-                <li><img class="h-8 w-8 rounded-full" src="img/nuru.jpg" alt=""></li>
-            </ul>
-        </nav>
+    <header class="flex lg:self-end">
+       <!-- Nav -->
+            <nav class="container flex justify-between lg:justify-end lg:space-x-5 mx-5 my-3 text-sm font-sans">
+            <div class="flex items-center justify-between">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                    <ul class="flex justify-between items-center lg:text-xs">
+                        <li class="border-b-2 border-blue-600 text-center uppercase p-2 pb-3 lg:hidden">All</li>
+                        <li class="hidden text-center uppercase p-2 pb-3 lg:block">Gmail</li>
+                        <li class="uppercase p-2 pb-3">Images</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="flex items-center">
+                        <li>
+                            <a href="#" class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 -ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 -ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 -ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                            </svg>
+                            </a>
+                        </li>
+                        <li><img class="h-8 w-8 rounded-full" src="img/nuru.jpg" alt=""></li>
+                </ul>
+            </div>
+            </nav>
     </header>
     <main class="flex flex-col h-5/6 min-h-full">
-        <div class="flex flex-col items-center justify-end -mt-48">
+        <div class="flex flex-col items-center justify-end -mt-30">
             <img class="google-logo h-10 w-10" src="img/google-logo.png" alt="Google-logo">
         </div>
-        <div class="container w-6/12 mx-auto mt-5">
-            <form class="formOne flex flex-col justify-center w-5/6 mx-auto mb-2 relative open">
+        <div class="container w-11/12 max-w-md md:w-10/12 max-w-xl lg:w-full mx-auto mt-5 lg:max-w-6xl xl:max-w-4xl">
+            <form class="formOne flex flex-col justify-center w-full md:w-5/6 mx-auto mb-2 relative open">
                 <label class="sr-only" for="s">Search</label>
-                <div class="absolute top-3 left-20 pl-3 flex justify-between items-center pointer-events-none w-9/12">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#9AA0A5">
+                <div class="relative top-0 left-20 md:left-28 lg:left-36 xl:left-0 pl-3 flex justify-between items-center pointer-events-none w-9/12 xl:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="absolute top-3 xl:top-3 -left-16 md:-left-14 xl:left-20 h-5 w-5" viewBox="0 0 20 20" fill="#9AA0A5">
                         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#4285f4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="absolute top-3 right-6 md:right-12 lg:right-4 xl:top-3 xl:right-20 h-5 w-5" viewBox="0 0 20 20" fill="#4285f4">
                         <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd" />
                       </svg>
                   </div>
-                <input type="search" name="s" id="s" class="search-box py-2 px-6 border rounded-3xl w-full md:w-5/6 md:mx-auto hover:shadow outline-none" autocomplete="off">
+                <input type="search" name="s" id="s" class="search-box py-2 px-10 xl:px-14 border rounded-3xl w-full md:w-5/6 md:mx-auto hover:shadow outline-none" autocomplete="off">
 
-                <div class="droplist hide flex flex-col justify-between py-2 px-6 border border-t-transparent rounded-t-none rounded-t-none rounded-b-2xl h-auto w-full md:w-5/6 md:mx-auto shadow-lg outline-none border-t-0 -mt-2 absolute top-10 left-16 z-10 -ml-2 bg-white">
+                <div class="droplist hide flex flex-col justify-between py-2 px-6 border border-t-transparent rounded-t-none rounded-t-none rounded-b-2xl h-auto w-full md:w-5/6 md:mx-auto shadow-lg outline-none border-t-0 -mt-2 absolute top-10 left-0 md:left-10 lg:left-20 xl:left-16 z-10 -ml-2 bg-white">
                     <ul class="flex flex-col mt-5 space-y-2">
                         <li class="flex items-center justify-between space-x-2">
                             <div class="flex items-center justify-between space-x-2">
@@ -141,33 +152,42 @@
                             <p class="text-gray-400">Remove</p>
                         </li>
                     </ul>
-                    <div class="flex justify-center space-x-5 w-full mx-auto text-base">
+                    <div class="hidden lg:flex justify-center space-x-5 w-full mx-auto text-base">
                         <input type="text" value="Google Search" class="inline-block my-5 py-2 bg-gray-100 hover:shadow text-gray-700 text-center rounded">
                         <input type="text" value="I'm Feelig Lucky" class="inline-block  my-5 py-2 bg-gray-100 hover:shadow text-gray-700 text-center rounded">
                     </div>
                 </div>
-            <div class="search-tabs flex justify-center space-x-5 w-full mx-auto text-base">
+            <div class="hidden xl:block search-tabs flex justify-center space-x-5 container w-6/12 mx-auto text-base">
                 <input type="text" value="Google Search" class="inline-block my-5 py-2 bg-gray-100 hover:shadow text-gray-700 text-center rounded">
                 <input type="text" value="I'm Feelig Lucky" class="inline-block  my-5 py-2 bg-gray-100 hover:shadow text-gray-700 text-center rounded">
             </div>
         </form>
     </div><!-- .container ends-->
         
-        <div class="flex-grow max-h-80">
-            <div class="flex justify-center">
-                <p class="search-langs flex space-x-2 text-sm">Google offered in: 
-                    <span class="ml-1"><a class="hover:underline text-blue-600 visited:text-purple-600" href="#">Hausa</a></span>
-                    <span class=""><a class="hover:underline text-blue-600 visited:text-purple-600" href="#">Igbo</a></span>
-                    <span class=""><a class="hover:underline text-blue-600 visited:text-purple-600" href="#">Èdè Yorùbá</a></span>
-                    <p class=""><a class="hover:underline text-blue-600 visited:text-purple-600" href="#">Nigerian Pidgin</a></p>span>
-                </p>
+        <div class="flex-grow max-h-80 text-xs mt-5">
+            <div class="langs-wrap flex flex-wrap justify-center space-y-5 lg:space-y-0 md:block md:w-6/12 md:mx-auto lg:flex lg:items-center lg:w-4/12 lg:space-y-3">
+                <p class="search-langs flex md:space-x-2 text-sm md:justify-center">Google offered in:</p>
+                <div class="flex space-x-5 md:justify-center lg:ml-2"> 
+                    <span class="ml-1">
+                        <a class="hover:underline text-blue-600 visited:text-purple-600" href="#">Hausa</a>
+                    </span>
+                    <span class="">
+                        <a class="hover:underline text-blue-600 visited:text-purple-600" href="#">Igbo</a>
+                    </span>
+                    <span class="">
+                        <a class="hover:underline text-blue-600 visited:text-purple-600" href="#">Èdè Yorùbá</a>
+                            </span>
+                    <span class="">
+                        <a class="hover:underline text-blue-600 visited:text-purple-600" href="#">Nigerian Pidgin</a>
+                    </span>
+                </div>
             </div>
         </div>
   
         
     </main>
     <footer>
-        <div class="flex-shrink text-sm bg-gray-100 px-5 text-gray-500">
+        <div class="hidden xl:block flex-shrink text-sm bg-gray-100 px-5 text-gray-500">
             <div class="py-3">
                 <p>Nigeria</p>
             </div>
@@ -190,7 +210,25 @@
             </div>
         
         </div>
+        <section>
+            <div class="xl:hidden my-5 px-5">
+                <p class="text-center md:text-left text-gray-500 mb-2">Nigeria</p>
+                <hr>
+            </div>
+        </section>
+        <section class="xl:hidden my-10">
+            <div class="px-5 text-center text-gray-500 text-sm space-x-5">
+                <span>Settings</span>
+                <span>Privacy</span>
+                <span>Terms</span>
+                <!-- <span>Help</span>
+                <span>Feedback</span> -->
+            </div>
+            <!-- <div class="px-5 text-center text-gray-500 text-sm space-x-5 my-5">
+                
+            </div> -->
+        </section>
     </footer>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

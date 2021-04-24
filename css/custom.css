@@ -45,3 +45,38 @@
 .scrolled {
   box-shadow: 2px 0 4px rgb(0 0 0 / 16%);
 }
+
+@media screen and (min-width: 425px) {
+  .langs-wrap {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .search-langs {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .google-logo {
+    width: 160px;
+    height: 56px;
+  }
+
+  .expanded {
+    margin-left: -1.5px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .expanded {
+    margin-left: -8px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .expanded {
+    margin-left: -2px;
+  }
+}
