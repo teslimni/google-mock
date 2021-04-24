@@ -1,22 +1,28 @@
-const search = document.querySelector('.search-box');
+// Variables for the search box
+const search = document.querySelector('.big-search-box');
 const mobileSearch = document.querySelector('.mobile-search');
-const form = document.querySelector('.formOne');
+const formMobile = document.querySelector('.formMobile');
 const inputFull = document.querySelector('.hide');
 const expand = document.querySelector('.mobile-droplist');
-const offers = document.querySelector('.search-tabs');
+// const offers = document.querySelector('.search-tabs');
 const langs = document.querySelector('.search-langs');
+
+// Variables for the results page
+const close = document.querySelector('.close');
 const footerOffer = document.querySelector('.scroller');
 const gOffer = document.querySelector('.g-Offer')
 
-
 mobileSearch.addEventListener('click', e => {
-    form.classList.add('open');
-    // search.classList.add('rounded-b-none', 'hover:shadow-none');
+    formMobile.classList.toggle('open');
+    mobileSearch.classList.toggle('rounded-b-none');
     mobileSearch.classList.add('hover:shadow-none');
-    // expand.classList.add('expanded');
-    expand.classList.remove('hide');
-    offers.classList.add('hide');
-    langs.classList.add('hide');
+    expand.classList.toggle('hide');
+    // offers.classList.add('hide');
+    // langs.classList.add('hide');
+}) 
+
+close.addEventListener('click', e => {
+    expand.classList.add('hide')
 })
 
 
