@@ -151,7 +151,7 @@
                 <img class="logo w-32 px-5 lg:px-0 lg:w-20 -ml-3" src="img/google-logo.png" alt="Google-logo">
             </div>
             <!-- Big Screen Search bar -->
-            <form class="desktop flex flex-col justify-center w-8/12 lg:w-6/12 mx-auto mb-2 relative hidden lg:block -ml-10">
+            <form class="desktop flex-col justify-center w-8/12 lg:w-6/12 mx-auto mb-2 relative hidden lg:block -ml-10">
                 <label class="sr-only" for="s">Search</label>
                 <div class="absolute top-3 left-2 pl-3 flex justify-between items-center pointer-events-none w-9/12">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#9AA0A5">
@@ -275,10 +275,11 @@
                         <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd" />
                       </svg>
                   </div>
-                <input type="search" name="mobileSearch" id="mobileSearch" class="mobile-search py-2 px-10 border rounded-3xl w-full md:w-5/6 md:mx-auto shadow outline-none" autocomplete="off" placeholder="mobile">
+                <input type="search" name="mobileSearch" id="mobileSearch" class="mobile-search py-2 px-12 border rounded-3xl w-full md:w-5/6 md:mx-auto shadow outline-none" autocomplete="off" placeholder="mobile">
+                <input type="submit" value="Submit" class="hidden">
 
                 <!-- mobile-droplist here -->
-                <div class="mobile-droplist hide flex flex-col justify-between py-2 px-6 border border-t-transparent rounded-t-none rounded-t-none rounded-b-2xl h-auto w-full md:w-5/6 md:mx-auto shadow-lg outline-none border-t-0 -mt-2 absolute -top-24 z-10">
+                <div class="mobile-droplist hide flex flex-col justify-between py-2 px-6 border border-t-transparent rounded-t-none rounded-b-2xl h-auto w-full md:w-5/6 md:mx-auto shadow-lg outline-none border-t-0 -mt-2 absolute -top-24 z-10">
                     <input type="search" name="sf" id="sf" class="mobile-search py-2 px-10 border rounded-3xl w-full md:w-5/6 md:mx-auto shadow outline-none" autocomplete="off" placeholder="mobileDrop">
                     <ul class="flex flex-col mt-5 space-y-2">
                         <li class="flex items-center justify-between space-x-2">
