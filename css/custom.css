@@ -43,15 +43,18 @@
   box-shadow: 2px 0 4px rgb(0 0 0 / 16%);
 }
 
-.droplist {
+.droplist,
+.desktop-droplist {
   display: none;
 }
-.search-box:focus {
+.search-box:focus,
+.big-search-box:focus {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 
-.search-box:focus ~ .droplist {
+.search-box:focus ~ .droplist,
+.big-search-box:focus ~ .desktop-droplist {
   display: flex;
   z-index: 10;
 }
@@ -88,5 +91,17 @@
 @media screen and (min-width: 1440px) {
   .expanded {
     margin-left: -2px;
+  }
+  .desktop-droplist {
+    margin-left: 4px;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .search-icon {
+    left: 6rem;
+  }
+  .mic-icon {
+    right: 6rem;
   }
 }

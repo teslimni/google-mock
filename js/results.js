@@ -14,7 +14,6 @@ const gOffer = document.querySelector('.g-Offer')
 
 mobileSearch.addEventListener('click', e => {
     formMobile.classList.toggle('open');
-    mobileSearch.classList.toggle('rounded-b-none');
     mobileSearch.classList.add('hover:shadow-none');
     expand.classList.toggle('hide');
     // offers.classList.add('hide');

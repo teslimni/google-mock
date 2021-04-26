@@ -12,7 +12,7 @@
     <div class="lg:hidden bg-white">
         <form action="#" class="formMobile flex flex-col">
             <!-- mobile-droplist here -->
-            <div class="mobile-droplist hide flex flex-col py-2 px-5 h-screen shadow-lg z-10 bg-white relative">
+            <div class="mobile-droplist hide flex flex-col py-2 px-5 h-screen shadow-lg z-10 bg-white fixed w-full">
                 <div class="flex justify-between">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute top-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
@@ -150,117 +150,121 @@
             <div class="lg:-ml-5">
                 <img class="logo w-32 px-5 lg:px-0 lg:w-20 -ml-3" src="img/google-logo.png" alt="Google-logo">
             </div>
+            <div class="container w-7/12">
             <!-- Big Screen Search bar -->
-            <form class="desktop flex-col justify-center w-8/12 lg:w-6/12 mx-auto mb-2 relative hidden lg:block -ml-10">
+            <form class="desktop flex-col justify-center w-full mx-auto mb-8 hidden lg:block -ml-10">
                 <label class="sr-only" for="s">Search</label>
-                <div class="absolute top-3 left-2 pl-3 flex justify-between items-center pointer-events-none w-9/12">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#9AA0A5">
+                <div class="relative top-3 flex justify-between items-center w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="search-icon absolute left-16 xl:left-20 2xl:right-24 h-5 w-5" viewBox="0 0 20 20" fill="#9AA0A5">
                         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#9AA0A5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mic-icon absolute right-16 xl:right-20 h-5 w-5" viewBox="0 0 20 20" fill="#9AA0A5">
                         <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd" />
                       </svg>
-                  </div>
-                <input type="search" name="s" id="s" class="big-search-box py-2 px-10 border rounded-3xl w-full md:w-5/6 md:mx-auto shadow hover:shadow-md outline-none" autocomplete="off" placeholder="desktop">
 
-                <div class="desktop-droplist hide flex flex-col justify-between py-2 px-6 border border-t-transparent rounded-t-none rounded-b-2xl h-auto w-full md:w-5/6 md:mx-auto shadow-lg outline-none border-t-0 -mt-2 absolute top-10 left-16 z-10 -ml-2">
-                    <ul class="flex flex-col mt-5 space-y-2">
-                        <li class="flex items-center justify-between space-x-2">
-                            <div class="flex items-center justify-between space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <a href="#" class="text-blue-600 visited:text-purple-600">How to become a superb programmer like Abdusemii Ajala</a>
-                            </div>
-                            <p class="text-gray-400">Remove</p>
-                        </li>
-                        <li class="flex items-center justify-between space-x-2">
-                            <div class="flex items-center justify-between space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <a href="#" class="text-blue-600 visited:text-purple-600">How to join CodeVillage</a>
-                            </div>
-                            <p class="text-gray-400">Remove</p>
-                        </li>
-                        <li class="flex items-center justify-between space-x-2">
-                            <div class="flex items-center justify-between space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <a href="#" class="text-blue-600 visited:text-purple-600">How can CodeVillage help me achieve my programming dream</a>
-                            </div>
-                            <p class="text-gray-400">Remove</p>
-                        </li>
-                        <li class="flex items-center justify-between space-x-2">
-                            <div class="flex items-center justify-between space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <a href="#" class="text-blue-600 visited:text-purple-600">How does CodeVillage help trainees get their dream jobs</a>
-                            </div>
-                            <p class="text-gray-400">Remove</p>
-                        </li>
-                        <li class="flex items-center justify-between space-x-2">
-                            <div class="flex items-center justify-between space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <a href="#" class="text-blue-600 visited:text-purple-600">I might be the next CodeVillage super programmer</a>
-                            </div>
-                            <p class="text-gray-400">Remove</p>
-                        </li>
-                        <li class="flex items-center justify-between space-x-2">
-                            <div class="flex items-center justify-between space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <a href="#" class="text-blue-600 visited:text-purple-600">How to move from zero to hero programmer</a>
-                            </div>
-                            <p class="text-gray-400">Remove</p>
-                        </li>
-                        <li class="flex items-center justify-between space-x-2">
-                            <div class="flex items-center justify-between space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <a href="#" class="text-blue-600 visited:text-purple-600">I am taking a break from WordPress into new programming stacks </a>
-                            </div>
-                            <p class="text-gray-400">Remove</p>
-                        </li>
-                        <li class="flex items-center justify-between space-x-2">
-                            <div class="flex items-center justify-between space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <a href="#" class="text-blue-600 visited:text-purple-600">I love CodeVillage</a>
-                            </div>
-                            <p class="text-gray-400">Remove</p>
-                        </li>
-                        <li class="flex items-center justify-between space-x-2">
-                            <div class="flex items-center justify-between space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <a href="#" class="text-blue-600 visited:text-purple-600">I am working on my coding skills knowing my life depends on it</a>
-                            </div>
-                            <p class="text-gray-400">Remove</p>
-                        </li>
-                        <li class="flex items-center justify-between space-x-2">
-                            <div class="flex items-center justify-between space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <a href="#" class="text-blue-600 visited:text-purple-600">How will the next 6 months look like for me</a>
-                            </div>
-                            <p class="text-gray-400">Remove</p>
-                        </li>
-                    </ul>
-                </div>
+                      <input type="search" name="s" id="s" class="big-search-box py-2 px-10 border rounded-3xl w-full md:w-5/6 md:mx-auto shadow hover:shadow-md outline-none" autocomplete="off" placeholder="desktop">
+                    <input type="submit" value="Submit" class="hidden">
+
+                    <div class="desktop-droplist flex flex-col justify-between py-2 px-6 border border-t-transparent rounded-t-none rounded-b-2xl h-auto w-full md:w-5/6 md:mx-auto shadow-lg outline-none border-t-0 absolute top-10 left-16 lg:left-12 xl:left-16 2xl:left-20 lg:w-5/6 z-10 bg-white">
+                        <ul class="flex flex-col mt-5 space-y-2">
+                            <li class="flex items-center justify-between space-x-2">
+                                <div class="flex items-center justify-between space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <a href="#" class="text-blue-600 visited:text-purple-600">How to become a superb programmer like Abdusemii Ajala</a>
+                                </div>
+                                <p class="text-gray-400">Remove</p>
+                            </li>
+                            <li class="flex items-center justify-between space-x-2">
+                                <div class="flex items-center justify-between space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <a href="#" class="text-blue-600 visited:text-purple-600">How to join CodeVillage</a>
+                                </div>
+                                <p class="text-gray-400">Remove</p>
+                            </li>
+                            <li class="flex items-center justify-between space-x-2">
+                                <div class="flex items-center justify-between space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <a href="#" class="text-blue-600 visited:text-purple-600">How can CodeVillage help me achieve my programming dream</a>
+                                </div>
+                                <p class="text-gray-400">Remove</p>
+                            </li>
+                            <li class="flex items-center justify-between space-x-2">
+                                <div class="flex items-center justify-between space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <a href="#" class="text-blue-600 visited:text-purple-600">How does CodeVillage help trainees get their dream jobs</a>
+                                </div>
+                                <p class="text-gray-400">Remove</p>
+                            </li>
+                            <li class="flex items-center justify-between space-x-2">
+                                <div class="flex items-center justify-between space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <a href="#" class="text-blue-600 visited:text-purple-600">I might be the next CodeVillage super programmer</a>
+                                </div>
+                                <p class="text-gray-400">Remove</p>
+                            </li>
+                            <li class="flex items-center justify-between space-x-2">
+                                <div class="flex items-center justify-between space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <a href="#" class="text-blue-600 visited:text-purple-600">How to move from zero to hero programmer</a>
+                                </div>
+                                <p class="text-gray-400">Remove</p>
+                            </li>
+                            <li class="flex items-center justify-between space-x-2">
+                                <div class="flex items-center justify-between space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <a href="#" class="text-blue-600 visited:text-purple-600">I am taking a break from WordPress into new programming stacks </a>
+                                </div>
+                                <p class="text-gray-400">Remove</p>
+                            </li>
+                            <li class="flex items-center justify-between space-x-2">
+                                <div class="flex items-center justify-between space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <a href="#" class="text-blue-600 visited:text-purple-600">I love CodeVillage</a>
+                                </div>
+                                <p class="text-gray-400">Remove</p>
+                            </li>
+                            <li class="flex items-center justify-between space-x-2">
+                                <div class="flex items-center justify-between space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <a href="#" class="text-blue-600 visited:text-purple-600">I am working on my coding skills knowing my life depends on it</a>
+                                </div>
+                                <p class="text-gray-400">Remove</p>
+                            </li>
+                            <li class="flex items-center justify-between space-x-2">
+                                <div class="flex items-center justify-between space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#9AA0A5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <a href="#" class="text-blue-600 visited:text-purple-600">How will the next 6 months look like for me</a>
+                                </div>
+                                <p class="text-gray-400">Remove</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
             </form>
+            </div>
             <!-- User Avatar -->
             <div class="lg:flex-grow">
-                <img class="avatar h-8 w-8 rounded-full lg:ml-auto" src="img/nuru.jpg" alt="Nuru">
+                <img class="avatar w-8 rounded-full lg:ml-auto" src="img/nuru.jpg" alt="Nuru">
             </div>
         </div>
         <!-- Mobile Search form -->
@@ -377,9 +381,9 @@
             </form>
         </div>
         <!-- Mobile nav -->
-        <div class="xl:hidden">
+        <div class="lg:hidden">
             <nav>
-                <ul class="flex justify-between items-center text-sm overflow-x-auto font-extrabold text-gray-400">
+                <ul class="flex justify-between lg:justify-start lg:ml-24 items-center text-sm overflow-x-auto font-extrabold text-gray-400">
                     <li class="mx-3 hover:border-b-2 w-max border-b-2 text-black border-black">All</li>
                     <li class="mx-3 w-max">Images</li>
                     <li class="mx-3 w-max">Videos</li>
@@ -391,7 +395,7 @@
             </nav>
         </div>
         <!-- Large screen nav -->
-        <div class="hidden xl:block mt-5 pb-2 border-b">
+        <div class="hidden lg:block mt-5 pb-2 border-b">
             <div class="flex justify-between container w-5/12 ml-32 text-gray-500">
                 <ul class="flex space-x-5">
                     <li class="text-black">All</li>
