@@ -18,6 +18,7 @@ search.addEventListener('click', e => {
     langs.classList.add('hide');
 })
 
+/**  
 mobileSearch.addEventListener('click', e => {
     form.classList.add('open');
     // search.classList.add('rounded-b-none', 'hover:shadow-none');
@@ -27,6 +28,7 @@ mobileSearch.addEventListener('click', e => {
     offers.classList.add('hide');
     langs.classList.add('hide');
 })
+*/
 
 
 // Results Page Accordion
@@ -43,6 +45,6 @@ accordions.forEach(accordion => {
     })
 })
 
-footerOffer.addEventListener('scroll', e => {
-    gOffer.classList.toggle('scrolled')
-})
+// footerOffer.addEventListener('scroll', e => {
+//     gOffer.classList.toggle('scrolled')
+// })

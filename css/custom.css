@@ -43,6 +43,19 @@
   box-shadow: 2px 0 4px rgb(0 0 0 / 16%);
 }
 
+.droplist {
+  display: none;
+}
+.search-box:focus {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.search-box:focus ~ .droplist {
+  display: flex;
+  z-index: 10;
+}
+
 @media screen and (min-width: 425px) {
   .langs-wrap {
     display: block;
